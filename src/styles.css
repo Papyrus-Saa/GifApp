@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(259, 36%, 10%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 0%, 85%);
+  padding-top: 2em;
+}
+.loading {
+  margin: 0 0 40px 30px;
+}
+
+.mainTitle {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.input {
+  width: 80%;
+  padding: 1em 1em;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-bottom: 40px;
+  border-radius: 0.3em;
+  outline: none;
+  border: 1px solid rgb(16, 0, 104);
+  background-color: hsl(256, 35%, 8%);
+  color: rgb(180, 180, 180);
+}
+
+.card-grid {
+  width: 90%;
+  margin: 0 auto 50px;
+  padding: 1em 0 1em;
+  text-align: center;
+  border-radius: 2em;
+  border: 1px solid rgb(16, 0, 104);
+}
+
+.categoryTitle {
+  margin-bottom: 20px;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  /* padding: 1em; */
+  background: #18022b;
+  border: 1px solid rgb(16, 0, 104);
+}
+.itemParagraph {
+  color: rgb(218, 218, 218);
+  padding: 1em 0;
+}
+
+.itemImg {
+  display: block;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 1em;
+  margin: 0 auto 40px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: hsl(34, 84%, 40%);
+  border-radius: 0.3em;
+  color: rgb(180, 180, 180);
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    width: 50%;
+  }
+  .gridDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .input {
+    width: 30%;
+  }
+}
